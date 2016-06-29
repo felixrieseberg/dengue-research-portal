@@ -4,8 +4,20 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    fingerprint: {
+      exclude: [
+        'images/layers-2x.png',
+        'images/layers.png',
+        'images/marker-icon-2x.png',
+        'images/marker-icon.png',
+        'images/marker-shadow.png'
+      ]
+    }
   });
+
+  app.import('bower_components/office-ui-fabric/dist/js/jquery.fabric.min.js');
+  app.import('bower_components/office-ui-fabric/dist/css/fabric.min.css');
+  app.import('bower_components/office-ui-fabric/dist/css/fabric.components.min.css');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

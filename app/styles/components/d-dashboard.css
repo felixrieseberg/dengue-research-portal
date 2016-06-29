@@ -1,0 +1,26 @@
+.ms-Grid-col {
+  padding-left: 0;
+}
+
+.metapanel {
+  height: calc(100vh - 100px);
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.metapanel-header {
+  padding: .5em;
+  margin-bottom: .5em;
+}
+
+.metapanel .graph,
+.metapanel .ms-font-l {
+  flex-grow: 0;
+}
+
+.metapanel .news {
+  flex-grow: 1;
+  overflow-y: auto;
+}

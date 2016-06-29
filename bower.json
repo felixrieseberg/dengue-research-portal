@@ -4,6 +4,10 @@
     "ember": "~2.6.0",
     "ember-cli-shims": "0.1.1",
     "ember-cli-test-loader": "0.2.2",
-    "ember-qunit-notifications": "0.1.0"
+    "ember-qunit-notifications": "0.1.0",
+    "office-ui-fabric": "^2.6.1",
+    "leaflet": "~0.7.7",
+    "leaflet-openweathermap": "http://github.com/arschmitz/leaflet-openweathermap.git#abff397",
+    "chartist": "~0.7.4"
   }
 }

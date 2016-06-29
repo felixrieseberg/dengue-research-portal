@@ -1,0 +1,20 @@
+<div class="ms-Grid"> 
+    <div class="ms-Grid-row">
+        {{d-navbar}}
+    </div>
+    <div class="ms-Grid-row map">
+        <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg7">
+            {{d-map}}
+        </div>
+        <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg5 ms-bgColor-neutralLighter metapanel">
+            <div class="ms-font-l ms-bgColor-themePrimary ms-fontColor-themeLighterAlt metapanel-header">News Items</div>
+            <div class="news">
+                {{d-article-list list=list}}
+            </div>
+	        <div class="ms-font-l ms-bgColor-themePrimary ms-fontColor-themeLighterAlt metapanel-header">Items</div>
+            <div class="graph">
+                {{d-chart}}
+            </div>
+        </div>
+    </div>
+</div>
