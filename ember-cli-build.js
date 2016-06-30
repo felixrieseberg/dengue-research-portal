@@ -18,6 +18,9 @@ module.exports = function(defaults) {
   app.import('bower_components/office-ui-fabric/dist/js/jquery.fabric.min.js');
   app.import('bower_components/office-ui-fabric/dist/css/fabric.min.css');
   app.import('bower_components/office-ui-fabric/dist/css/fabric.components.min.css');
+  app.import('bower_components/dom-to-image/dist/dom-to-image.min.js');
+  app.import('bower_components/file-saver/FileSaver.min.js');
+  app.import('vendor/leaflet.heat.js');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
