@@ -1,6 +1,8 @@
 <div class="ms-Grid"> 
     <div class="ms-Grid-row">
-        {{d-navbar}}
+        {{#unless isElectron}}
+            {{d-navbar}}
+        {{/unless}}
     </div>
     <div class="ms-Grid-row map">
         <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg7">

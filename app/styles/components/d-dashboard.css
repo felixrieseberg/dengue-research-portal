@@ -3,7 +3,7 @@
 }
 
 .metapanel {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 20px);
   padding-right: 0;
   display: flex;
   flex-direction: column;
