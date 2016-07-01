@@ -6,14 +6,12 @@
         <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg7">
             {{d-map}}
         </div>
-        <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg5 ms-bgColor-neutralLighter metapanel">
-            <div class="ms-font-l ms-bgColor-themePrimary ms-fontColor-themeLighterAlt metapanel-header">News Items</div>
+        <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg5 metapanel">
             <div class="news">
-                {{d-article-list list=list}}
+                {{d-articles}}
             </div>
-	        <div class="ms-font-l ms-bgColor-themePrimary ms-fontColor-themeLighterAlt metapanel-header">Items</div>
             <div class="graph">
-                {{d-chart}}
+                {{d-history-forecast selectedDate=selectedDate}}
             </div>
         </div>
     </div>

@@ -1,0 +1,40 @@
+.history-forecast-command-bar {
+  padding-left: 24px;
+}
+
+.history-forecast-command-bar .ms-DatePicker-input {
+  border: none;
+  font-size: 14px;
+  font-family: Segoe UI Regular WestEuropean,Segoe UI,Tahoma,Arial,sans-serif;
+  font-weight: 400;
+  margin-left: 25px;
+  padding-top: 12px;
+  background-color: inherit;
+  height: 40px;
+}
+
+.history-forecast-command-bar .ms-TextField {
+  background-color: #eff6fc;
+  color: #333;
+  max-width: 150px;
+  height: 40px;
+  padding: 0;
+}
+
+.history-forecast-command-bar .ms-TextField:hover {
+  background-color: #c7e0f4;
+  color: #0078d7;
+}
+
+.history-forecast-command-bar .ms-DatePicker-input::-webkit-input-placeholder {
+  color: #333;
+  font-family: Segoe UI Regular WestEuropean,Segoe UI,Tahoma,Arial,sans-serif;
+  font-weight: 400;
+}
+
+.history-forecast-command-bar .ms-DatePicker-event.ms-Icon {
+  left: 5px;
+  margin-right: 5px;
+  color: #0078d7;
+  bottom: 10px;
+}

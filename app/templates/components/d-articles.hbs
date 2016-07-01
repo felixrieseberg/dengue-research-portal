@@ -1,0 +1,43 @@
+<div class="ms-CommandBar">
+  <div class="ms-CommandBar-sideCommands">
+    <div class="ms-CommandBarItem ms-CommandBarItem--hasTextOnly">
+      <div class="ms-CommandBarItem-linkWrapper">
+        <a {{action "toggleInteractive"}} class="ms-CommandBarItem-link {{if isInteractive "toggled"}}" tabindex="1">
+          <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--pencil"></span>
+          <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Interactive</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="ms-CommandBar-mainArea">
+    <div class="ms-CommandBarItem">
+      <div class="ms-CommandBarItem-linkWrapper">
+        <a {{action "saveToImage"}} class="ms-CommandBarItem-link" tabindex="1">
+          <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--save"></span>
+          <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Save</span>
+        </a>
+      </div>
+    </div>
+    <div class="ms-CommandBarItem">
+      <div class="ms-CommandBarItem-linkWrapper">
+        <a {{action "toggleHeatMap"}} class="ms-CommandBarItem-link {{if isHeatmap "toggled"}}" tabindex="1">
+          <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--alertOutline"></span>
+          <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Heatmap</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="ms-CommandBarItem ms-CommandBarItem--iconOnly ms-CommandBarItem-overflow">
+      <div class="ms-CommandBarItem-linkWrapper">
+        <a class="ms-CommandBarItem-link" tabindex="2">
+          <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--ellipsis"></span>
+          <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Ellipsis</span>
+          <i class="ms-CommandBarItem-chevronDown ms-Icon ms-Icon--chevronDown"></i>
+        </a>
+      </div>
+      <ul class="ms-CommandBar-overflowMenu ms-ContextualMenu"></ul>
+    </div>
+  </div>
+</div>
+
+{{d-article-list list=list}}

@@ -5,15 +5,6 @@ import toLetters from 'dengue/utils/to-letters';
 export default ChartistChart.extend({
   classNames: ['ms-font-s-plus', 'd-chart'],
 
-  data: {
-    labels: ['4/10', '4/11', '4/12', '4/13', '4/14', '4/15', '4/16', '4/17'],
-    series: [
-      [5, 3, 5, 4, 0, 0, 0, 0],
-      [5, 4, 5, 6, 0, 0, 0, 0],
-      [4, 7, 6, 10, 4, 6, 8, 5],
-    ]
-  },
-
   type: 'bar',
   ratio: 'ct-octave',
 
@@ -56,9 +47,7 @@ export default ChartistChart.extend({
     }]
   ],
 
-  didInsertElement() {
-    this._super();
-
+  updateHover() {
     Ember.run.later(() => {
       let seriesDomNodes = [];
 
@@ -81,12 +70,10 @@ export default ChartistChart.extend({
           const $item = Ember.$(this);
           const index = $item.index();
 
-          Ember.$(seriesDomNodes[index].children()[index]).addClass('day-hover');
-
-          // seriesDomNodes.forEach(series => {
-          //   const children = series.children();
-          //   Ember.$(children[index]).addClass('day-hover');
-          // });
+          seriesDomNodes.forEach(series => {
+            const children = series.children();
+            Ember.$(children[index]).addClass('day-hover');
+          });
         },
         function mouseOut() {
           const $item = Ember.$(this);
@@ -99,6 +86,11 @@ export default ChartistChart.extend({
         }
       )
     });
+  },
+
+  didRender() {
+    this._super();
+    this.updateHover();
   }
 });
 
